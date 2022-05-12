@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NIT AndhraPradesh</title>
+    <link rel="icon" href="nitlogo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!--we have linked our CSS file-->
+</head>
+
+<body>
+    <div class="full-page">
+      <!--   <div class="navbar">
+           <nav>
+                <ul id='MenuItems'>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Account</button></li>
+                </ul>
+            </nav>
+            <!--Completion of navigation bar
+        </div> -->
+    
+      <!--  <div id='login-form' class='login-page'>
+            <!--creating the form box -->
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'>
+                    </div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <!--creating the login form -->
+                <form action='authentication12.php' onsubmit="return validation()" method='POST'>
+                    <div id='login' class='input-group-login'>
+                        <input type='text' name='roll' id='roll' class='input-field' placeholder='Roll No' required><br>
+                        <input type='password' name='pass' id='pass' class='input-field' placeholder='Enter Password' required><br>
+                        <input type='checkbox' class='check-box'><span>Remember Password</span>
+                        <button type='submit' class='submit-btn'>Log In</button></div>
+                </form>
+                <!--creating the registration form -->
+                <form action="signup.php" method='POST'>
+                    <div id='register' class='input-group-register'>
+                        <input type='text' name='rollno' class='input-field' placeholder='Roll No' id="rollno" required><br>
+                        <input type='email' name='email' class='input-field' placeholder='Email Id' id="email" required><br>
+                        <input type='password' name='password' class='input-field' placeholder='Enter Password' id='password' required><br>
+                        <input type='text' name='cpassword' class='input-field' placeholder='Confirm Password' id='cpassword' required><br>
+                        <input type='checkbox' class='check-box'><span>I Agree To The Terms And Conditions</span>
+                        <button type='submit' class='submit-btn'>Register</button></div>
+                </form>
+                <!--style the form page -->
+            </div>
+        </div>
+   <!-- </div>
+    <!--javascript code for registration form-->
+    <script>
+        var x = document.getElementById('login'); 
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn'); 
+
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <!--this code is for, when you click on the login page or registration page, another page will be disappear-->
+  <!-- <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>-->
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script> 
+</body>
+
+</html>
